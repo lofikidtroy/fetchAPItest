@@ -12,8 +12,10 @@
   <script> 
     document.querySelector('button.button').addEventListener('click', function () {
   fetch('https://api.npoint.io/583d5162db8f8afadecc')
-    .then((response) => {
-      return response.text();
+  fetchPromise.then(response => {
+    return response.json();
+  }).then(people => {
+    const names = people.map(person => person.name).join("/n";
     })
     .then((myContent) => {
       document.querySelector('.par').innerHTML = myContent;
