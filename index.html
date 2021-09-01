@@ -14,8 +14,6 @@
   fetch('https://api.npoint.io/77bf1809094d3ca3acc4')
   fetchPromise.then(response => {
     return response.text();
-  }).then(people => {
-    const names = people.map(person => person.name).join("/n";
     })
     .then((myContent) => {
       document.querySelector('.par').innerHTML = myContent;
