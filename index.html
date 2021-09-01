@@ -13,7 +13,7 @@
     document.querySelector('button.button').addEventListener('click', function () {
   fetch('https://api.npoint.io/583d5162db8f8afadecc')
   fetchPromise.then(response => {
-    return response.json();
+    return response.text();
   }).then(people => {
     const names = people.map(person => person.name).join("/n";
     })
