@@ -13,7 +13,7 @@
     document.querySelector('button').addEventListener('click', function () {
   fetch('https://api.punkapi.com/v2/beers/random')
     .then((response) => {
-      return response.text();
+      return response.json();
     })
     .then((myContent) => {
       document.querySelector('.par').innerHTML = myContent;
