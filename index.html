@@ -7,13 +7,13 @@
   
   <p class="par"></p>
 
-  <button>Get Content</button>
+  <button class="button">Green</button>
 
   <script> 
-    document.querySelector('button').addEventListener('click', function () {
+    document.querySelector('button.button').addEventListener('click', function () {
   fetch('https://api.punkapi.com/v2/beers/random')
     .then((response) => {
-      return response.json();
+      return response.text();
     })
     .then((myContent) => {
       document.querySelector('.par').innerHTML = myContent;
