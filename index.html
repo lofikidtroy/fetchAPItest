@@ -12,7 +12,7 @@
   <script> 
     document.querySelector('button.button').addEventListener('click', function () {
   fetch('https://api.npoint.io/77bf1809094d3ca3acc4')
-  fetchPromise.then(response => {
+  .then((response) => {
     return response.text();
     })
     .then((myContent) => {
