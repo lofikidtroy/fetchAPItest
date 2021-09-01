@@ -11,7 +11,7 @@
 
   <script> 
     document.querySelector('button.button').addEventListener('click', function () {
-  fetch('https://api.punkapi.com/v2/beers/random')
+  fetch('http://localhost:8080/api/customers')
     .then((response) => {
       return response.text();
     })
